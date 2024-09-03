@@ -88,7 +88,11 @@ def showBlobs(blobdf):
 def generateBlobsData(imageDir, noClasses, trainSamples, imSize=64, noiseSize=25, colour=False):
 
     all_blob_files = glob.glob(imageDir + "*png")
-
+    
+     imageDir = './assets/simple_blobs/'
+     number_of_samples = 1200
+     image_size = 64# in pixels
+     number_of_classes = 11
     #blob_class as name/int
     intblobclass={'bloby':0,'wavey':1,'spikey':2, 'misty':3, 'ellipsy':4, 'ringey':5}
     intblobclass.update({'ringey-wavey-1':6,'ringey-wavey-2':7,'ringey-wavey-3':8,'ringey-wavey-4':9,'ringey-wavey-5':10,'ringey-wavey-6':11})
